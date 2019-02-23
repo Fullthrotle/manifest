@@ -14,8 +14,8 @@
            sync-j="8" />
 
   <!-- GZOSP -->
-  <project path="manifest" name="manifest" remote="gzosp" />
-  <project path="build/make" name="build" remote="gzosp" >
+  <project path="manifest" name="manifest" remote="xtreme" />
+  <project path="build/make" name="build" remote="xtreme" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -24,7 +24,7 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong"  remote="gzosp" >
+  <project path="build/soong" name="build_soong"  remote="xtreme" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -39,7 +39,7 @@
 
   <project path="art" name="art" groups="pdk" remote="gzosp" />
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="gzosp" />
-  <project path="bionic" name="bionic" remote="gzosp" />
+  <project path="bionic" name="bionic" remote="xtreme" />
   <project path="device/generic/goldfish" name="device_generic_goldfish" groups="pdk" remote="gzosp" />
   <project path="device/gzosp/sepolicy" name="device_gzosp_sepolicy" remote="gzosp" />
   <project path="external/exfat" name="external_exfat" remote="gzosp" />
@@ -51,11 +51,11 @@
   <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="gzosp" />
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="gzosp" />
   <project path="frameworks/base" name="frameworks_base" remote="gzosp" />
-  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="gzosp" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="xtreme" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" groups="pdk" remote="gzosp" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="gzosp" />
   <project path="hardware/broadcom/wlan" name="hardware_broadcom_wlan" groups="pdk,broadcom_wlan" remote="gzosp" />
-  <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="gzosp" />
+  <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="xtreme" />
   <project path="hardware/gzosp/interfaces" name="hardware_gzosp_interfaces" remote="gzosp" />
   <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="gzosp" />
   <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" groups="pdk" remote="gzosp" />
@@ -80,6 +80,6 @@
   <project path="system/tools/dtbtool" name="system_tools_dtbtool" remote="gzosp" />
   <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="gzosp" />
   <project path="system/vold" name="system_vold" groups="pdk" remote="gzosp" />
-  <project path="vendor/gzosp" name="vendor_gzosp" remote="gzosp" />
+  <project path="vendor/xtreme" name="vendor_xtreme" remote="xtreme" />
 
 </manifest>

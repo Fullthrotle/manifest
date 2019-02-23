@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+<remote  name="xtreme"
+           fetch="https://github.com/X-TremeOS"
+           revision="9.x" />
+  
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/"
@@ -593,8 +597,8 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
-  <!-- GZOSP manifest -->
-  <include name="gzosp_default.xml" />
+  <!-- XTREME manifest -->
+  <include name="xtreme_default.xml" />
 
   <!-- CAF manifest -->
   <include name="caf_default.xml" />
